@@ -1,0 +1,33 @@
+<!doctype html>
+<htmllang="en">
+<head>
+ <title>facebook sdk page</title>
+ </head>
+ <body>
+  <h1>facebook integration</h1>
+  <h5>below we are testing our facebook sdk integration,</h5>
+  <div><img src="maxresdefault.jpg"></div>
+  <script>
+    window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1581581205438368',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+ <body>
